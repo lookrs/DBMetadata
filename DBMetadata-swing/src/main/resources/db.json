@@ -1,0 +1,10 @@
+{
+  "selected":"MYSQL-jdbc:mysql://192.168.10.107:3306/strapi-root",
+  "servers":[{
+    "dialect":"MYSQL",
+    "name":"MYSQL-jdbc:mysql://192.168.10.107:3306/strapi-root",
+    "pwd":"7d2344bda5a4ef622b18223c14d47284",
+    "url":"jdbc:mysql://192.168.10.107:3306/strapi",
+    "user":"root"
+  }]
+}

@@ -5,9 +5,9 @@ import com.github.abel533.component.JTextF;
 import com.github.abel533.component.JTextPwd;
 import com.github.abel533.database.Dialect;
 import com.github.abel533.utils.I18n;
-import org.jb2011.lnf.beautyeye.ch3_button.BEButtonUI;
 
 import javax.swing.*;
+import javax.swing.plaf.basic.BasicButtonUI;
 import java.awt.*;
 
 public class LoginPanel extends JPanel {
@@ -86,24 +86,21 @@ public class LoginPanel extends JPanel {
         login.setBounds(10, 200, 332, 49);
         login.setFont(Code.TEXT_BUTTON);
         login.setForeground(Color.WHITE);
-        login.setUI(new BEButtonUI()
-                .setNormalColor(BEButtonUI.NormalColor.green));
+        login.setUI(new BasicButtonUI());
         panelBtn.add(login);
 
         saveCfg = new JButton(I18n.key("tools.login.save"));
         saveCfg.setBounds(349, 200, 137, 49);
         saveCfg.setFont(Code.TEXT_BUTTON);
         saveCfg.setForeground(Color.WHITE);
-        saveCfg.setUI(new BEButtonUI()
-                .setNormalColor(BEButtonUI.NormalColor.blue));
+        saveCfg.setUI(new BasicButtonUI());
         panelBtn.add(saveCfg);
 
         delCfg = new JButton(I18n.key("tools.login.del"));
         delCfg.setBounds(484, 209, 63, 49);
         delCfg.setFont(Code.TEXT_BUTTON);
         delCfg.setForeground(Color.WHITE);
-        delCfg.setUI(new BEButtonUI()
-                .setNormalColor(BEButtonUI.NormalColor.red));
+        delCfg.setUI(new BasicButtonUI());
         panelBtn.add(delCfg);
 
         //布局

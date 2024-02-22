@@ -13,7 +13,7 @@ public class EncrypDES {
     private static SecretKey deskey;
 
     static {
-        Security.addProvider(new com.sun.crypto.provider.SunJCE());
+        Security.addProvider(java.security.Security.getProvider("SunJCE"));
         // 生成密钥
         deskey = new SecretKeySpec(defaultKey.getBytes(), "DES");
         // 生成Cipher对象,指定其支持的DES算法

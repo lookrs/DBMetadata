@@ -20,14 +20,13 @@
       <version>1.2.4</version>
     </dependency>
 
-    <!--swing-beautyeye-->
+    <!-- https://mvnrepository.com/artifact/com.formdev/flatlaf -->
     <dependency>
-      <groupId>beautyeye_lnf</groupId>
-      <artifactId>beautyeye_lnf</artifactId>
-      <version>1.0</version>
-      <scope>system</scope>
-      <systemPath>${basedir}/lib/beautyeye_lnf.jar</systemPath>
+      <groupId>com.formdev</groupId>
+      <artifactId>flatlaf</artifactId>
+      <version>3.4</version>
     </dependency>
+
     <dependency>
       <groupId>ninepatch4j</groupId>
       <artifactId>ninepatch4j</artifactId>
